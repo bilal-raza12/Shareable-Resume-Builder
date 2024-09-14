@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shareable Editable Dynamic Resume Builder</h1>
+      <div class="resume-form-container">
+        <form action="" id="resume-form">
+          <div class="form-group">
+            <h2>Personal Information</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Your Full Name"
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email Address"
+              required
+            />
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter Your Phone Number"
+              required
+            />
+            <label for="address">Address:</label>
+            <textarea
+              name="address"
+              id="address"
+              rows="3"
+              cols="30"
+              placeholder="Enter Your Adress"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group" id="about-me-section">
+            <h2>About Me</h2>
+            <label for="professional-summary">Professional Summary:</label>
+            <textarea
+              name="professional-summary"
+              id="professional-summary"
+              rows="4"
+              cols="50" required></textarea>
+            <label for="profession">Profession:</label>
+            <input
+              type="text"
+              id="profession"
+              placeholder="Enter Your Profession"
+              required>
+              <label for="Linkedin">Linkedin Account URL:</label>
+              <input
+                type="url"
+                id="linkedin"
+                placeholder="Enter Your Linkedin Account URL"
+                required>
+
+
+          </div>
+          <div class="form-group" id="education-section">
+            <h2>Education</h2>
+            <textarea name="education" id="education" rows="4" cols="50"></textarea>
+           
+
+          </div>
+
+          <div id="experience-section" class="form-group">
+            <h2>Work Experience</h2>
+            <label for="work-experience">Work Experience</label>
+            <textarea name="work-experience" id="work-experience" rows="4" cols="50"></textarea>
+            
+
+
+          </div>
+
+          <div class="form-group" id="skills-section">
+            <h2>Skills</h2>
+            <textarea name="skills" id="skills"></textarea>
+           
+          </div>
+       
+            
+        <button type="submit" id="generate-resume">Generate Resume </button>
+        </form>
+      </div>
+      <div id="resume-display" contenteditable="true"></div>
+    </div>
+
+      <div id="share-link-container" style="display: none;">
+        <p>You can view your resume by clicking the link below 👇</p>
+        <a href="#" id="share-link" target="_blank"></a>
+        <br>
+        <button type="button" id="pdf-btn">Download as PDF</button>
+      </div>
+
+      
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
